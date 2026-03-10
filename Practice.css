@@ -1,0 +1,51 @@
+.Center-Text {
+    text-align: center;
+}
+h1 {
+    color: rgb(108, 7, 7);
+}
+body {
+    background-color:rgb(100, 99, 99);
+}
+h2 {
+    color: whitesmoke;
+}
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.Container img {
+    max-width: 500px;
+    height: auto;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+.Background_Container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.Sliding_Background {
+    background-image: url(Moving_Background.jpg);
+    background-repeat: repeat;
+    height: 100%;
+    width: 200%;
+    animation: none;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
